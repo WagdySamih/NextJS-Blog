@@ -1,6 +1,8 @@
+import Main from "../components/home/Main"
+
 const HomePage = () => {
   return (
-    <div> Hello from Blog website </div>
+    <div> <Main /></div>
   )
 }
 
