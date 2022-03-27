@@ -11,7 +11,7 @@ const NavigationBar = () => {
         </a>
       </Link>
       <ul>
-        <li><Link href={"/posts"}> All Posts </Link></li>
+        <li><Link href={"/Posts"}> All Posts </Link></li>
         <li><Link href={"./ContactUs"}>Contact Us</Link></li>
       </ul>
     </header>
