@@ -1,16 +1,15 @@
+import ReactMarkdown from "react-markdown"
 import PostHeader from "./PostHeader"
 
 import classes from "./PostContent.module.css"
-const PostContent = () => {
-  const DUMMY_POST = {
-    slug: "Getting-started-with-Next.js",
-    title: "Getting started with Next.js",
-    image: "next.png",
-    content: "#This is just dummy text"
-  }
+const PostContent = ({ post }) => {
+
   return (
     <article className={classes.content}>
-      <PostHeader title={DUMMY_POST.title} image={DUMMY_POST.image} />
+      <PostHeader title={post.title} image={post.image} />
+      <ReactMarkdown>
+        {post.content}
+      </ReactMarkdown>
     </article>
   )
 }
