@@ -12,7 +12,7 @@ const NavigationBar = () => {
       </Link>
       <ul>
         <li><Link href={"/Posts"}> All Posts </Link></li>
-        <li><Link href={"./ContactUs"}>Contact Us</Link></li>
+        <li><Link href={"/ContactUs"}>Contact Us</Link></li>
       </ul>
     </header>
   )
