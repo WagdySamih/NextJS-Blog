@@ -16,7 +16,7 @@ const handler = async (req, res) => {
       const client = await connect();
       const db = client.db();
       const messages = await db.collection("messages")
-        .insertOne({ newMessage })
+        .insertOne(newMessage)
       await close(client)
   
       res.status(201).send({ message: "message is sent successfully", messages })
