@@ -1,8 +1,17 @@
+
+import { Fragment } from "react"
+import Head from "next/head"
 import PostContent from "../../components/postsDetails/PostContent"
 import { getPostDetails, getPostsFilesPaths } from "../../utils/postsHelper"
 
 const PostDetailsPage = ({ post }) => {
-  return <PostContent post={post} />
+  return <Fragment>
+    <Head>
+      <title>{post.title}</title>
+      <meta name="description" content={post.excerpt} />
+    </Head>
+    <PostContent post={post} />
+  </Fragment>
 }
 
 export const getStaticProps = (context) => {
